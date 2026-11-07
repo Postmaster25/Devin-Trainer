@@ -10729,6 +10729,21 @@
          }
         },
         {
+         "name": "Easy",
+         "kind": "recovery",
+         "durationSec": 15,
+         "group": "Main set",
+         "power": {
+          "highPct": 55.32,
+          "highW": 130
+         },
+         "hr": "down–125 or less before the next rep",
+         "set": {
+          "index": 1,
+          "count": 2
+         }
+        },
+        {
          "name": "Easy between sets",
          "kind": "recovery",
          "durationSec": 300,
@@ -11099,6 +11114,21 @@
           "index": 10,
           "count": 10
          },
+         "set": {
+          "index": 2,
+          "count": 2
+         }
+        },
+        {
+         "name": "Easy",
+         "kind": "recovery",
+         "durationSec": 15,
+         "group": "Main set",
+         "power": {
+          "highPct": 55.32,
+          "highW": 130
+         },
+         "hr": "down–125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2

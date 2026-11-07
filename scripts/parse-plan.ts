@@ -266,7 +266,7 @@ function buildRide(cell: string): Workout {
     for (let s = 1; s <= sets; s++) {
       for (let r = 1; r <= reps; r++) {
         phases.push({ name: 'Hard', kind: 'work', durationSec: 30, group: 'Main set', power: range(lo, hi), ...t, rep: { index: r, count: reps }, set: { index: s, count: sets } });
-        if (r < reps) phases.push({ ...recovery(15, 'Easy'), set: { index: s, count: sets } });
+        phases.push({ ...recovery(15, 'Easy'), set: { index: s, count: sets } });
       }
       if (s < sets) phases.push(recovery(min(between), 'Easy between sets'));
     }
