@@ -5,7 +5,7 @@ import { href, navigate } from '../router';
 import { fmtFullDate, fmtMonthDay, fmtWeekday, planDate } from '../lib/dates';
 import { fmtDuration } from '../lib/format';
 import { fmtPower, primaryWorkPhase } from '../lib/watts';
-import { hasTimer, nextSameTypeSlot, parseKey, rawWorkout, resolveWorkout } from '../lib/planUtils';
+import { groupLabel, hasTimer, nextSameTypeSlot, parseKey, rawWorkout, resolveWorkout, stepName } from '../lib/planUtils';
 import { cuePlayer } from '../lib/audio';
 import { TopBar } from './common';
 
@@ -20,12 +20,6 @@ function groupPhases(phases: Phase[]): { group: string; phases: Phase[]; seconds
     groups[groups.length - 1].seconds += p.durationSec;
   }
   return groups;
-}
-
-function stepName(p: Phase): string {
-  if (!p.rep) return p.name;
-  const set = p.set ? `Set ${p.set.index} of ${p.set.count} · ` : '';
-  return `${set}${p.name} rep ${p.rep.index} of ${p.rep.count}`;
 }
 
 async function copyText(text: string): Promise<boolean> {
@@ -152,7 +146,7 @@ export default function WorkoutDetail({ workoutKey }: { workoutKey: string }) {
             {groupPhases(w.phases).map((g, gi) => (
               <div key={gi} className="phase-group">
                 <div className="phase-group-head">
-                  <span>{g.group}</span>
+                  <span>{groupLabel(g.group)}</span>
                   <span className="muted">{fmtDuration(g.seconds)}</span>
                 </div>
                 {g.phases.map((p, i) => (

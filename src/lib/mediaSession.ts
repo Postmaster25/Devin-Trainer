@@ -6,7 +6,7 @@ export function setMediaMetadata(title: string, artist: string) {
     navigator.mediaSession.metadata = new MediaMetadata({
       title,
       artist,
-      album: 'Mueller Sub-30',
+      album: 'Ride Training Plan',
       artwork: [
         { src: `${base}icon-192.png`, sizes: '192x192', type: 'image/png' },
         { src: `${base}icon-512.png`, sizes: '512x512', type: 'image/png' },

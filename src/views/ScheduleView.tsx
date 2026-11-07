@@ -117,7 +117,7 @@ export default function ScheduleView({ weekNumber }: { weekNumber: number }) {
                         {hasLong && <div className="wo-note more">More notes in detail ›</div>}
                       </>
                     );
-                    return w.category === 'ride' ? (
+                    return w.category === 'ride' || hasLong ? (
                       <a key={key} className="wo tappable" href={href({ name: 'workout', key })}>
                         {content}
                       </a>

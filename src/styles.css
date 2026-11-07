@@ -137,4 +137,3 @@ button, input, select { font: inherit; color: inherit; }
 .wo-emoji { display: inline-block; width: 1.5em; font-size: 1.05em; }
 .btn-link { display: inline-flex; align-items: center; text-decoration: none; color: inherit; }
 .hr-big { font-size: clamp(1.6rem, 8vw, 2.2rem); font-weight: 800; color: #ff5d7a; font-variant-numeric: tabular-nums; line-height: 1.1; }
-.hr-big .hr-unit { font-size: 0.55em; font-weight: 700; opacity: 0.85; }

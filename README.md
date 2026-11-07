@@ -1,4 +1,4 @@
-# Mueller Sub-30 Trainer
+# Ride Training Plan (Mueller Sub-30 Trainer)
 
 Mobile-first PWA (Vite + React + TypeScript) for iPhone that shows the Mueller Sub-30 schedule and runs indoor interval workouts with spoken cues stitched from a pre-generated clip library.
 

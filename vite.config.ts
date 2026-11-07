@@ -13,9 +13,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Mueller Sub-30 Trainer',
-        short_name: 'Sub-30',
-        description: 'Mueller Sub-30 training schedule and interval timer',
+        name: 'Ride Training Plan',
+        short_name: 'Ride Plan',
+        description: 'Ride training schedule and interval timer',
         theme_color: '#0f1115',
         background_color: '#0f1115',
         display: 'standalone',

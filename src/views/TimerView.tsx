@@ -7,7 +7,7 @@ import { allClipIds, buildCues, type Cue } from '../lib/cues';
 import { cuePlayer } from '../lib/audio';
 import { fmtClock, fmtDuration } from '../lib/format';
 import { fmtPower } from '../lib/watts';
-import { hasTimer, resolveWorkout } from '../lib/planUtils';
+import { groupLabel, hasTimer, resolveWorkout, stepName } from '../lib/planUtils';
 import { clearMediaSession, setMediaHandlers, setMediaMetadata, setMediaPlaybackState } from '../lib/mediaSession';
 import type { Phase } from '../data/schema';
 import { TopBar } from './common';
@@ -195,7 +195,6 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
   const next = timeline.phases[pos.index + 1];
   const watts = fmtPower(phase.power, settings.ftp);
   const label = intervalLabel(phase);
-  const upcomingRep = !label && next?.rep && !next.group?.startsWith('Warm-up') ? `Next: interval ${next.rep.index} of ${next.rep.count}` : undefined;
   const progressPct = (elapsed / timeline.total) * 100;
 
   return (
@@ -221,10 +220,9 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
         </div>
       ) : (
         <div className="timer-body">
-          <div className="phase-group-label">{phase.group}</div>
+          <div className="phase-group-label">{groupLabel(phase.group)}</div>
           <div className="phase-name-big">{phase.name}</div>
           {label && <div className="interval">{label}</div>}
-          {upcomingRep && <div className="interval muted">{upcomingRep}</div>}
           <div className="watts-big">{watts || '—'}</div>
           {phase.hr && (
             <div className="hr-big">
@@ -241,7 +239,7 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
           </button>
           {next ? (
             <div className="next">
-              <span className="muted">Next</span> {next.name} · {fmtDuration(next.durationSec)}
+              <span className="muted">Next</span> {stepName(next)} · {fmtDuration(next.durationSec)}
               {next.power && <strong> · {fmtPower(next.power, settings.ftp)}</strong>}
             </div>
           ) : (

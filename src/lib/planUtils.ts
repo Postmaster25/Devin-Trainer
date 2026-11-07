@@ -1,4 +1,4 @@
-import type { Plan, Week, Workout } from '../data/schema';
+import type { Phase, Plan, Week, Workout } from '../data/schema';
 import type { Progress } from './storage';
 import { DEMO_KEY, DEMO_WORKOUT } from '../data/demo';
 
@@ -31,6 +31,16 @@ export function resolveWorkout(plan: Plan, key: string, progress: Progress): Res
   const repeated = src ? rawWorkout(plan, src) : undefined;
   return repeated ? { key, ref, workout: repeated, repeatOf: src } : { key, ref, workout: original };
 }
+
+/** Display name for a step, e.g. "Sweet spot rep 1 of 2". */
+export function stepName(p: Phase): string {
+  if (!p.rep) return p.name;
+  const set = p.set ? `Set ${p.set.index} of ${p.set.count} · ` : '';
+  return `${set}${p.name} rep ${p.rep.index} of ${p.rep.count}`;
+}
+
+/** Group label without the building-block code, e.g. "Warm-up (WU-S)" -> "Warm-up". */
+export const groupLabel = (group: string | undefined) => (group ?? '').replace(/\s*\([^)]*\)\s*$/, '');
 
 export const hasTimer = (w: Workout) => w.category === 'ride' && w.indoor && w.phases.length > 0;
 
