@@ -32,7 +32,11 @@ export default function SettingsView() {
     cuePlayer.unlock();
     cuePlayer.gapMs = settings.gapMs;
     const sweetSpot = { lowPct: 87.23 };
-    await cuePlayer.say(['next_interval_15', ...wattClips(sweetSpot, settings.ftp, manifest?.maxNumber), 'for', ...durationClips(12 * 60, manifest?.maxNumber)]);
+    try {
+      await cuePlayer.say(['next_interval_15', ...wattClips(sweetSpot, settings.ftp, manifest?.maxNumber), 'for', ...durationClips(12 * 60, manifest?.maxNumber)]);
+    } finally {
+      cuePlayer.stopKeepAlive();
+    }
   };
 
   const onFile = async (file: File) => {

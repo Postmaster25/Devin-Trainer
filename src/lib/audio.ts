@@ -211,11 +211,13 @@ class CuePlayer {
     this.anchor = undefined;
   }
 
-  /** Play a one-off cue immediately (e.g. audio test). */
+  /** Play a one-off cue immediately (e.g. audio test); resolves when it has finished. */
   async say(clips: string[]) {
     await this.load(clips);
     await this.resumeContext();
-    this.play({ at: 0, clips, kind: 'phase' }, this.context().currentTime + 0.05);
+    const { sources } = this.play({ at: 0, clips, kind: 'phase' }, this.context().currentTime + 0.05);
+    const last = sources.at(-1);
+    if (last) await new Promise<void>((resolve) => last.addEventListener('ended', () => resolve(), { once: true }));
   }
 
   clipDurations(manifest: AudioManifest): Record<string, number> {
