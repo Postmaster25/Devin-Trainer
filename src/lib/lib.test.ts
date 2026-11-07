@@ -53,6 +53,8 @@ describe('dates', () => {
     expect(planDate('2026-10-19', 31, 5)).toBe('2027-05-22');
     expect(addDays('2027-03-13', 1)).toBe('2027-03-14'); // across DST
     expect(daysBetween('2026-11-01', '2026-11-08')).toBe(7);
+    expect(daysBetween('2026-10-19', '2026-11-02')).toBe(14);
+    expect(weekContaining('2026-10-19', '2026-11-02', 1, 31)).toBe(3);
   });
   it('finds and clamps the current week', () => {
     expect(weekContaining('2026-10-19', '2026-11-07', 1, 31)).toBe(3);

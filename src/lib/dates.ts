@@ -29,8 +29,12 @@ export function addDays(iso: string, days: number): string {
 
 /** Whole days from a to b (b - a), DST-safe. */
 export function daysBetween(a: string, b: string): number {
-  const ua = Date.UTC(...(a.split('-').map(Number) as [number, number, number]));
-  const ub = Date.UTC(...(b.split('-').map(Number) as [number, number, number]));
+  const utc = (iso: string) => {
+    const [y, m, d] = iso.split('-').map(Number);
+    return Date.UTC(y, m - 1, d);
+  };
+  const ua = utc(a);
+  const ub = utc(b);
   return Math.round((ub - ua) / 86_400_000);
 }
 
