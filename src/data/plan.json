@@ -711,7 +711,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -738,7 +738,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -793,7 +793,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -823,7 +823,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -990,7 +990,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -1017,7 +1017,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -1072,7 +1072,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -1102,7 +1102,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -1269,7 +1269,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -1296,7 +1296,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -1351,7 +1351,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -1381,7 +1381,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -1554,7 +1554,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -1581,7 +1581,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -1636,7 +1636,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -1666,7 +1666,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -1835,7 +1835,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -1862,7 +1862,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -1917,7 +1917,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -1947,7 +1947,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -2114,7 +2114,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -2141,7 +2141,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -2196,7 +2196,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -2226,7 +2226,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -2393,7 +2393,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -2420,7 +2420,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -2475,7 +2475,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -2505,7 +2505,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -2678,7 +2678,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -2705,7 +2705,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -2760,7 +2760,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -2790,7 +2790,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -2961,7 +2961,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -2988,7 +2988,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -3043,7 +3043,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -3073,7 +3073,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -3225,7 +3225,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -3252,7 +3252,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -3307,7 +3307,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -3337,7 +3337,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -3367,7 +3367,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -3534,7 +3534,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -3561,7 +3561,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -3616,7 +3616,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -3646,7 +3646,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -3782,7 +3782,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -3809,7 +3809,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -3864,7 +3864,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -3894,7 +3894,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -3972,7 +3972,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -3999,7 +3999,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -4054,7 +4054,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -4084,7 +4084,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -4114,7 +4114,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -4233,7 +4233,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -4260,7 +4260,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -4315,7 +4315,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -4345,7 +4345,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -4433,7 +4433,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -4460,7 +4460,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -4487,7 +4487,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -4542,7 +4542,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -4572,7 +4572,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -4602,7 +4602,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -4632,7 +4632,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -4749,7 +4749,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -4776,7 +4776,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -4831,7 +4831,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -4861,7 +4861,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -4891,7 +4891,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -4966,7 +4966,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -4993,7 +4993,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -5048,7 +5048,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -5078,7 +5078,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -5108,7 +5108,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -5225,7 +5225,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -5252,7 +5252,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -5307,7 +5307,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -5337,7 +5337,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -5425,7 +5425,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -5452,7 +5452,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -5479,7 +5479,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -5534,7 +5534,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -5564,7 +5564,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -5594,7 +5594,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -5624,7 +5624,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -5746,7 +5746,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -5773,7 +5773,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -5828,7 +5828,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -5858,7 +5858,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -5950,7 +5950,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -5977,7 +5977,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -6004,7 +6004,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -6057,7 +6057,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -6190,7 +6190,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 2
@@ -6217,7 +6217,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 2
@@ -6255,7 +6255,7 @@
           "lowW": 225,
           "highW": 230
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -6272,7 +6272,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -6285,7 +6285,7 @@
           "lowW": 225,
           "highW": 230
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -6302,7 +6302,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -6315,7 +6315,7 @@
           "lowW": 225,
           "highW": 230
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -6332,7 +6332,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -6407,7 +6407,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -6434,7 +6434,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -6489,7 +6489,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -6519,7 +6519,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -6549,7 +6549,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -6639,7 +6639,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -6666,7 +6666,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -6693,7 +6693,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -6744,7 +6744,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -6812,7 +6812,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -6839,7 +6839,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -6894,7 +6894,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -6924,7 +6924,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -6954,7 +6954,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -7042,7 +7042,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -7069,7 +7069,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -7096,7 +7096,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -7151,7 +7151,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -7181,7 +7181,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -7211,7 +7211,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -7241,7 +7241,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -7318,7 +7318,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -7345,7 +7345,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -7372,7 +7372,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -7427,7 +7427,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -7470,7 +7470,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -7549,7 +7549,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 2
@@ -7576,7 +7576,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 2
@@ -7614,7 +7614,7 @@
           "lowW": 228,
           "highW": 238
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -7631,7 +7631,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -7644,7 +7644,7 @@
           "lowW": 228,
           "highW": 238
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -7661,7 +7661,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -7749,7 +7749,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -7776,7 +7776,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -7803,7 +7803,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -7858,7 +7858,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -7888,7 +7888,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -7918,7 +7918,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -7948,7 +7948,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -8025,7 +8025,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -8052,7 +8052,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -8079,7 +8079,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -8134,7 +8134,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -8177,7 +8177,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -8260,7 +8260,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 2
@@ -8287,7 +8287,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 2
@@ -8325,7 +8325,7 @@
           "lowW": 225,
           "highW": 225
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -8342,7 +8342,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -8355,7 +8355,7 @@
           "lowW": 225,
           "highW": 225
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -8372,7 +8372,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -8385,7 +8385,7 @@
           "lowW": 225,
           "highW": 225
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -8402,7 +8402,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -8480,7 +8480,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -8507,7 +8507,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -8562,7 +8562,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -8592,7 +8592,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -8724,7 +8724,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 2
@@ -8751,7 +8751,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 2
@@ -8789,7 +8789,7 @@
           "lowW": 228,
           "highW": 238
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -8806,7 +8806,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -8819,7 +8819,7 @@
           "lowW": 228,
           "highW": 238
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -8836,7 +8836,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -8849,7 +8849,7 @@
           "lowW": 228,
           "highW": 238
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -8866,7 +8866,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -8941,7 +8941,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -8968,7 +8968,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -9023,7 +9023,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -9053,7 +9053,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -9083,7 +9083,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -9173,7 +9173,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -9200,7 +9200,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -9227,7 +9227,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -9278,7 +9278,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -9346,7 +9346,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 1,
           "count": 2
@@ -9373,7 +9373,7 @@
           "lowW": 200,
           "highW": 220
          },
-         "hr": "rises–140–150",
+         "hr": "rises to 140–150",
          "rep": {
           "index": 2,
           "count": 2
@@ -9428,7 +9428,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -9458,7 +9458,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Sweet spot",
@@ -9488,7 +9488,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -9576,7 +9576,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -9603,7 +9603,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -9630,7 +9630,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -9685,7 +9685,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -9715,7 +9715,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -9745,7 +9745,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "VO2",
@@ -9775,7 +9775,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -9851,7 +9851,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -9878,7 +9878,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -9905,7 +9905,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -9960,7 +9960,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -10003,7 +10003,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -10082,7 +10082,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 2
@@ -10109,7 +10109,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 2
@@ -10147,7 +10147,7 @@
           "lowW": 228,
           "highW": 235
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -10164,7 +10164,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Threshold",
@@ -10177,7 +10177,7 @@
           "lowW": 228,
           "highW": 235
          },
-         "hr": "about 158–166, drifting–168",
+         "hr": "about 158–166, drifting to 168",
          "rpe": "7–8",
          "cadence": "85–95",
          "rep": {
@@ -10194,7 +10194,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -10282,7 +10282,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -10309,7 +10309,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -10336,7 +10336,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -10374,7 +10374,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10395,7 +10395,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10412,7 +10412,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10433,7 +10433,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10450,7 +10450,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10471,7 +10471,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10488,7 +10488,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10509,7 +10509,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10526,7 +10526,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10547,7 +10547,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10564,7 +10564,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10585,7 +10585,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10602,7 +10602,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10623,7 +10623,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10640,7 +10640,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10661,7 +10661,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10678,7 +10678,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10699,7 +10699,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10716,7 +10716,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10737,7 +10737,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 1,
           "count": 2
@@ -10752,7 +10752,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Hard",
@@ -10765,7 +10765,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10786,7 +10786,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -10803,7 +10803,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10824,7 +10824,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -10841,7 +10841,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10862,7 +10862,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -10879,7 +10879,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10900,7 +10900,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -10917,7 +10917,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10938,7 +10938,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -10955,7 +10955,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -10976,7 +10976,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -10993,7 +10993,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -11014,7 +11014,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -11031,7 +11031,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -11052,7 +11052,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -11069,7 +11069,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -11090,7 +11090,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -11107,7 +11107,7 @@
           "lowW": 280,
           "highW": 295
          },
-         "hr": "builds–160–172",
+         "hr": "builds to 160–172",
          "rpe": "8–9",
          "cadence": "95–105",
          "rep": {
@@ -11128,7 +11128,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep",
+         "hr": "down to 125 or less before the next rep",
          "set": {
           "index": 2,
           "count": 2
@@ -11143,7 +11143,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -11220,7 +11220,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -11247,7 +11247,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -11274,7 +11274,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -11329,7 +11329,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -11372,7 +11372,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -11457,7 +11457,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -11484,7 +11484,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -11511,7 +11511,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -11566,7 +11566,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -11596,7 +11596,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -11754,7 +11754,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -11781,7 +11781,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -11808,7 +11808,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -11859,7 +11859,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -11941,7 +11941,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -11968,7 +11968,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -11995,7 +11995,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -12050,7 +12050,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -12080,7 +12080,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -12275,7 +12275,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -12302,7 +12302,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -12329,7 +12329,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -12384,7 +12384,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -12414,7 +12414,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -12504,7 +12504,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Opener",
@@ -12532,7 +12532,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Opener",
@@ -12654,7 +12654,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -12681,7 +12681,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -12708,7 +12708,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -12759,7 +12759,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -12841,7 +12841,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -12868,7 +12868,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -12895,7 +12895,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -12950,7 +12950,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Climb pace",
@@ -12980,7 +12980,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }
@@ -13070,7 +13070,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Opener",
@@ -13098,7 +13098,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–125 or less before the next rep"
+         "hr": "down to 125 or less before the next rep"
         },
         {
          "name": "Opener",
@@ -13220,7 +13220,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 1,
           "count": 3
@@ -13247,7 +13247,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 2,
           "count": 3
@@ -13274,7 +13274,7 @@
           "lowW": 250,
           "highW": 265
          },
-         "hr": "rises–150–160",
+         "hr": "rises to 150–160",
          "rep": {
           "index": 3,
           "count": 3
@@ -13325,7 +13325,7 @@
           "highPct": 55.32,
           "highW": 130
          },
-         "hr": "down–115 or less"
+         "hr": "down to 115 or less"
         }
        ]
       }

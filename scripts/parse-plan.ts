@@ -78,7 +78,7 @@ function parseClock(text: string): number | undefined {
   return m ? +m[1] * 60 + +m[2] : undefined;
 }
 
-const tidy = (s: string) => s.replace(/\s+to\s+/g, '–').trim();
+const tidy = (s: string) => s.replace(/(\d)\s+to\s+(\d)/g, '$1–$2').trim();
 
 // ---------- building blocks ----------
 
