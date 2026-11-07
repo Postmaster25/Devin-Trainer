@@ -121,7 +121,7 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
     eng.start(0);
     cuePlayer.scheduleFrom(cuesRef.current, 0);
     setMediaMetadata(workout.title, workout.summary);
-    setMediaHandlers({ play: resume, pause, stop: () => complete(false) });
+    setMediaHandlers({ play: resume, pause, stop: () => complete(true) });
     setMediaPlaybackState('playing');
     setStatus('running');
   }
