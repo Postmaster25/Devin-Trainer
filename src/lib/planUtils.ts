@@ -40,7 +40,7 @@ export function stepName(p: Phase): string {
 }
 
 /** Group label without the building-block code, e.g. "Warm-up (WU-S)" -> "Warm-up". */
-export const groupLabel = (group: string | undefined) => (group ?? '').replace(/\s*\([^)]*\)\s*$/, '');
+export const groupLabel = (group: string | undefined) => (group ?? '').replace(/\s*\((?:WU|CD|REC)(?:-[A-Z0-9]+)?\)\s*$/, '');
 
 export const hasTimer = (w: Workout) => w.category === 'ride' && w.indoor && w.phases.length > 0;
 

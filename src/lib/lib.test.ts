@@ -7,7 +7,7 @@ import { buildCues, planCues, durationClips, numberClips, wattClips, allClipIds 
 import { buildTimeline, positionAt } from './timeline';
 import { TimerEngine } from './engine';
 import { resolveWatts, fmtPower } from './watts';
-import { nextSameTypeSlot, resolveWorkout, rawWorkout, hasTimer } from './planUtils';
+import { nextSameTypeSlot, resolveWorkout, rawWorkout, hasTimer, groupLabel } from './planUtils';
 
 const manifest = JSON.parse(readFileSync(new URL('../../public/audio/audio-manifest.json', import.meta.url), 'utf8'));
 
@@ -189,5 +189,13 @@ describe('plan import validation', () => {
     const r = validatePlan({ schemaVersion: 1, name: 'x', referenceFtp: 235, weeks: [{ number: 1, days: [{ offset: 9 }] }] });
     expect(r.ok).toBe(false);
     if (!r.ok) expect(r.errors[0]).toMatch(/weeks\.0\.days\.0\.offset/);
+  });
+});
+
+describe('groupLabel', () => {
+  it('drops building-block codes only', () => {
+    expect(groupLabel('Warm-up (WU-S)')).toBe('Warm-up');
+    expect(groupLabel('Cool-down (CD-10)')).toBe('Cool-down');
+    expect(groupLabel('Tempo (high cadence)')).toBe('Tempo (high cadence)');
   });
 });
