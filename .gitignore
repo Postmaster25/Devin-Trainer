@@ -4,3 +4,4 @@ dev-dist
 *.local
 __pycache__
 .venv
+*.tsbuildinfo
