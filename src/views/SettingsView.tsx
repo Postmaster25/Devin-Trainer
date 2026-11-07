@@ -149,7 +149,8 @@ export default function SettingsView() {
             hidden
             onChange={(e) => {
               const f = e.target.files?.[0];
-              if (f) void f.text().then(importText);
+              if (f)
+                void f.text().then(importText, () => setImportMsg({ ok: false, text: 'Could not read that file.' }));
               e.target.value = '';
             }}
           />
