@@ -16,6 +16,7 @@ export type CueOptions = {
 };
 
 const COUNTDOWN = 5;
+const SHORT_COUNTDOWN = 3;
 const ANNOUNCE_LEAD = 15;
 const ANNOUNCE_MIN_REST = 30;
 const ONES = 20;
@@ -60,18 +61,25 @@ export function cueLengthSec(clips: string[], clipMs: Record<string, number> | u
   return clips.reduce((a, c) => a + (clipMs[c] ?? 600) / 1000, 0) + (Math.max(0, clips.length - 1) * gapMs) / 1000;
 }
 
+/** A work interval whose rest is too short for both the T-15 announcement and a countdown. */
+export type CueConflict = { phaseIndex: number; restSec: number; announceSec: number; countdown: number };
+
 /**
  * Cue schedule:
  * - warm-up / cool-down start: name + duration
  * - every work interval: 5-second countdown into it ("5 … 1, go") and out of it ("5 … 1")
- * - rest > 30 s before a work interval: at T-15 "Next interval starting in 15 seconds: {watts} watts for {duration}"
+ * - rest > 30 s before a work interval: at T-15 "Next interval starting in 15 seconds: {watts} watts for {duration}".
+ *   If that would overlap the countdown, the announcement starts earlier; if the rest is too short for that,
+ *   the countdown into the interval shortens to 3 seconds.
  * - end of ride: "workout complete"
  */
-export function buildCues(phases: Phase[], opts: CueOptions): Cue[] {
+export function planCues(phases: Phase[], opts: CueOptions): { cues: Cue[]; conflicts: CueConflict[] } {
   const { ftp, maxNumber = 400, clipMs, gapMs = 120 } = opts;
   const tl = buildTimeline(phases);
   const cues: Cue[] = [];
+  const conflicts: CueConflict[] = [];
   const num = (n: number) => numberClips(n, maxNumber);
+  const len = (clips: string[]) => cueLengthSec(clips, clipMs, gapMs);
 
   const groupDuration = (from: number) => {
     const g = phases[from].group;
@@ -94,17 +102,28 @@ export function buildCues(phases: Phase[], opts: CueOptions): Cue[] {
     }
 
     if (p.kind === 'work') {
-      if (prev && prev.kind !== 'work' && prev.durationSec > ANNOUNCE_MIN_REST) {
-        const clips = ['next_interval_15', ...wattClips(p.power, ftp, maxNumber), 'for', ...durationClips(p.durationSec, maxNumber)];
-        // Finish the announcement at least half a second before the countdown begins.
-        const latestEnd = start - COUNTDOWN - 0.5;
-        const len = cueLengthSec(clips, clipMs, gapMs);
-        const at = Math.max(tl.starts[i - 1], Math.min(start - ANNOUNCE_LEAD, latestEnd - len));
-        cues.push({ at, kind: 'announce', clips });
-      }
       if (prev && prev.kind !== 'work') {
-        for (let k = COUNTDOWN; k >= 1; k--) {
-          if (start - k >= tl.starts[i - 1]) cues.push({ at: start - k, kind: 'countdown', clips: num(k) });
+        const restStart = tl.starts[i - 1];
+        // Earliest moment the rest is free of speech (e.g. after "rest" or "warm up 15 minutes").
+        const free = cues.reduce((t, c) => (c.at >= restStart - 0.01 ? Math.max(t, c.at + len(c.clips) + gapMs / 1000) : t), restStart);
+        let countdown = COUNTDOWN;
+        if (prev.durationSec > ANNOUNCE_MIN_REST) {
+          const clips = ['next_interval_15', ...wattClips(p.power, ftp, maxNumber), 'for', ...durationClips(p.durationSec, maxNumber)];
+          const L = len(clips);
+          const fits = (c: number) => Math.min(start - ANNOUNCE_LEAD, start - c - 0.5 - L);
+          let at = fits(COUNTDOWN);
+          if (at < free) {
+            countdown = SHORT_COUNTDOWN;
+            at = fits(SHORT_COUNTDOWN);
+            if (at < free) {
+              conflicts.push({ phaseIndex: i, restSec: prev.durationSec, announceSec: L, countdown });
+              at = free;
+            }
+          }
+          cues.push({ at, kind: 'announce', clips });
+        }
+        for (let k = countdown; k >= 1; k--) {
+          if (start - k >= free - 0.01) cues.push({ at: start - k, kind: 'countdown', clips: num(k) });
         }
         cues.push({ at: start, kind: 'go', clips: ['go'] });
       }
@@ -117,7 +136,9 @@ export function buildCues(phases: Phase[], opts: CueOptions): Cue[] {
   });
 
   if (phases.length) cues.push({ at: tl.total, kind: 'complete', clips: ['workout_complete'] });
-  return cues.sort((a, b) => a.at - b.at);
+  return { cues: cues.sort((a, b) => a.at - b.at), conflicts };
 }
+
+export const buildCues = (phases: Phase[], opts: CueOptions): Cue[] => planCues(phases, opts).cues;
 
 export const allClipIds = (cues: Cue[]) => [...new Set(cues.flatMap((c) => c.clips))];

@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import plan from '../data/plan.json';
 import { validatePlan, type Phase } from '../data/schema';
 import { addDays, planDate, weekContaining, daysBetween } from './dates';
-import { buildCues, durationClips, numberClips, wattClips, allClipIds } from './cues';
+import { buildCues, planCues, durationClips, numberClips, wattClips, allClipIds } from './cues';
 import { buildTimeline, positionAt } from './timeline';
 import { TimerEngine } from './engine';
 import { resolveWatts, fmtPower } from './watts';
@@ -131,6 +131,16 @@ describe('cue schedule', () => {
     const len = ann.clips.reduce((a, id) => a + clipMs[id] / 1000, 0) + (ann.clips.length - 1) * 0.12;
     expect(ann.at + len).toBeLessThanOrEqual(300 - 5);
     expect(ann.at).toBeGreaterThanOrEqual(300 - 30);
+  });
+  it('shortens the countdown to 3 s when the rest is too short for the announcement and a 5-s countdown', () => {
+    const clipMs = { next_interval_15: 22000 };
+    const tight = planCues([rec(32), work(600, { power: { lowPct: 87.23, highPct: 90.21 } })], { ftp: 235, clipMs, gapMs: 120 });
+    expect(tight.conflicts).toEqual([]);
+    expect(tight.cues.filter((c) => c.kind === 'countdown' && c.at < 32).map((c) => c.at)).toEqual([29, 30, 31]);
+    const ann = tight.cues.find((c) => c.kind === 'announce')!;
+    expect(ann.at).toBeGreaterThanOrEqual(0);
+    const tooShort = planCues([rec(30.5), work(600, { power: { lowPct: 87.23, highPct: 90.21 } })], { ftp: 235, clipMs, gapMs: 120 });
+    expect(tooShort.conflicts).toHaveLength(1);
   });
 });
 
