@@ -30,10 +30,15 @@ class CuePlayer {
   gapMs = 120;
 
   manifest(): Promise<AudioManifest> {
-    this.manifestPromise ??= fetch(`${base()}audio-manifest.json`).then((r) => {
-      if (!r.ok) throw new Error(`audio manifest: HTTP ${r.status}`);
-      return r.json();
-    });
+    this.manifestPromise ??= fetch(`${base()}audio-manifest.json`)
+      .then((r) => {
+        if (!r.ok) throw new Error(`audio manifest: HTTP ${r.status}`);
+        return r.json();
+      })
+      .catch((err) => {
+        this.manifestPromise = undefined;
+        throw err;
+      });
     return this.manifestPromise;
   }
 
