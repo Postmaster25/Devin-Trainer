@@ -9,27 +9,23 @@ import { hasTimer, nextSameTypeSlot, parseKey, rawWorkout, resolveWorkout } from
 import { cuePlayer } from '../lib/audio';
 import { TopBar } from './common';
 
-type Row = { phase: Phase; count: number };
-
-/** Collapse repeated steps in a group (e.g. 4 reps + 3 recoveries) into one row each with a count. */
-function collapse(phases: Phase[]): { group: string; rows: Row[]; seconds: number }[] {
-  const groups: { group: string; phases: Phase[] }[] = [];
+/** Split phases into consecutive groups (warm-up, main set, cool-down); every step stays listed in order. */
+function groupPhases(phases: Phase[]): { group: string; phases: Phase[]; seconds: number }[] {
+  const groups: { group: string; phases: Phase[]; seconds: number }[] = [];
   for (const p of phases) {
     const g = p.group ?? '';
     const last = groups[groups.length - 1];
     if (last && last.group === g) last.phases.push(p);
-    else groups.push({ group: g, phases: [p] });
+    else groups.push({ group: g, phases: [p], seconds: 0 });
+    groups[groups.length - 1].seconds += p.durationSec;
   }
-  return groups.map(({ group, phases: ps }) => {
-    const rows: Row[] = [];
-    const sig = (p: Phase) => JSON.stringify([p.name, p.kind, p.durationSec, p.power, p.hr, p.rpe, p.cadence, p.note]);
-    for (const p of ps) {
-      const existing = rows.find((r) => sig(r.phase) === sig(p));
-      if (existing && (p.rep || p.set || p.kind === 'recovery')) existing.count++;
-      else rows.push({ phase: p, count: 1 });
-    }
-    return { group, rows, seconds: ps.reduce((a, p) => a + p.durationSec, 0) };
-  });
+  return groups;
+}
+
+function stepName(p: Phase): string {
+  if (!p.rep) return p.name;
+  const set = p.set ? `Set ${p.set.index} of ${p.set.count} · ` : '';
+  return `${set}${p.name} rep ${p.rep.index} of ${p.rep.count}`;
 }
 
 async function copyText(text: string): Promise<boolean> {
@@ -65,7 +61,7 @@ export default function WorkoutDetail({ workoutKey }: { workoutKey: string }) {
   }
   const { workout: w, ref } = r;
   const date = planDate(settings.startDate, ref.week, ref.offset);
-  const back = href({ name: 'schedule', week: ref.week });
+  const back = r.demo ? href({ name: 'settings' }) : href({ name: 'schedule', week: ref.week });
   const target = primaryWorkPhase(w);
   const missed = !!progress.missed[workoutKey];
   const sourceKey = r.repeatOf ?? workoutKey;
@@ -101,9 +97,9 @@ export default function WorkoutDetail({ workoutKey }: { workoutKey: string }) {
 
   return (
     <div className="page">
-      <TopBar title={`Week ${ref.week}`} back={back} />
+      <TopBar title={r.demo ? 'Demo ride' : `Week ${ref.week}`} back={back} />
       <div className="pad">
-        <p className="muted">{fmtFullDate(date)}</p>
+        {!r.demo && <p className="muted">{fmtFullDate(date)}</p>}
         <div className="title-row">
           <h2 className="wo-big-title">{w.title}</h2>
           <button
@@ -153,19 +149,16 @@ export default function WorkoutDetail({ workoutKey }: { workoutKey: string }) {
         {w.phases.length > 0 && (
           <section className="phases">
             <h3>Phases</h3>
-            {collapse(w.phases).map((g, gi) => (
+            {groupPhases(w.phases).map((g, gi) => (
               <div key={gi} className="phase-group">
                 <div className="phase-group-head">
                   <span>{g.group}</span>
                   <span className="muted">{fmtDuration(g.seconds)}</span>
                 </div>
-                {g.rows.map(({ phase: p, count }, i) => (
+                {g.phases.map((p, i) => (
                   <div key={i} className={`phase-row kind-${p.kind}`}>
                     <div className="phase-main">
-                      <span className="phase-name">
-                        {count > 1 ? `${count} × ` : ''}
-                        {p.name}
-                      </span>
+                      <span className="phase-name">{stepName(p)}</span>
                       <span className="phase-dur">{fmtDuration(p.durationSec)}</span>
                     </div>
                     <div className="phase-targets">
@@ -183,7 +176,7 @@ export default function WorkoutDetail({ workoutKey }: { workoutKey: string }) {
           </section>
         )}
 
-        {w.category === 'ride' && (
+        {w.category === 'ride' && !r.demo && (
           <section className="missed">
             <label className="toggle">
               <input type="checkbox" checked={missed} onChange={toggleMissed} />
