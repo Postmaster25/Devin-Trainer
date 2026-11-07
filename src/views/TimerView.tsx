@@ -223,16 +223,7 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
           <div className="phase-group-label">{groupLabel(phase.group)}</div>
           <div className="phase-name-big">{phase.name}</div>
           {label && <div className="interval">{label}</div>}
-          <div className="watts-big">
-            {watts ? (
-              <>
-                {watts.replace(/ W$/, '')}
-                <span className="watts-unit"> W</span>
-              </>
-            ) : (
-              '—'
-            )}
-          </div>
+          <div className="watts-big">{watts || '—'}</div>
           {phase.hr && (
             <div className="hr-big">
               <span className="hr-unit">♥ HR</span> {phase.hr}
