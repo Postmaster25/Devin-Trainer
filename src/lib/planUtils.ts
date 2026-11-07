@@ -1,5 +1,6 @@
 import type { Plan, Week, Workout } from '../data/schema';
 import type { Progress } from './storage';
+import { DEMO_KEY, DEMO_WORKOUT } from '../data/demo';
 
 export type WorkoutRef = { week: number; offset: number; index: number };
 
@@ -18,10 +19,11 @@ export function rawWorkout(plan: Plan, key: string): Workout | undefined {
   return findWeek(plan, r.week)?.days.find((d) => d.offset === r.offset)?.workouts[r.index];
 }
 
-export type ResolvedWorkout = { key: string; ref: WorkoutRef; workout: Workout; repeatOf?: string };
+export type ResolvedWorkout = { key: string; ref: WorkoutRef; workout: Workout; repeatOf?: string; demo?: boolean };
 
 /** The workout scheduled at `key`, replaced by the repeated workout if a repeat targets this slot. */
 export function resolveWorkout(plan: Plan, key: string, progress: Progress): ResolvedWorkout | undefined {
+  if (key === DEMO_KEY) return { key, ref: { week: 0, offset: 0, index: 0 }, workout: DEMO_WORKOUT, demo: true };
   const ref = parseKey(key);
   const original = rawWorkout(plan, key);
   if (!ref || !original) return undefined;

@@ -6,6 +6,8 @@ import { cuePlayer, type AudioManifest } from '../lib/audio';
 import { durationClips, wattClips } from '../lib/cues';
 import { DEFAULT_FTP } from '../lib/storage';
 import { TopBar } from './common';
+import { href } from '../router';
+import { DEMO_KEY } from '../data/demo';
 
 export default function SettingsView() {
   const { plan, planSource, settings, updateSettings, importPlan, restoreDefaultPlan, updateProgress } = useAppState();
@@ -116,9 +118,14 @@ export default function SettingsView() {
             Gap between words: {settings.gapMs} ms
             <input type="range" min={0} max={300} step={10} value={settings.gapMs} onChange={(e) => updateSettings({ gapMs: Number(e.target.value) })} />
           </label>
-          <button className="btn" onClick={testAudio}>
-            Test audio
-          </button>
+          <div className="row wrap">
+            <button className="btn" onClick={testAudio}>
+              Test audio
+            </button>
+            <a className="btn btn-link" href={href({ name: 'workout', key: DEMO_KEY })}>
+              Demo ride (4 min)
+            </a>
+          </div>
           {manifest && (
             <p className="muted small">
               Voice {manifest.voice}, rate {manifest.rate}. Make sure the ringer switch is not muting Safari if you hear nothing.
