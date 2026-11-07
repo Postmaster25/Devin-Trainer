@@ -372,13 +372,14 @@ function nonRide(cell: string, week: number, deload: boolean): Workout {
     const light = cell.match(/^Volt, (.*) until May 4, then rest$/);
     if (light) {
       if (week >= 30) return restDay('Rest (Volt paused for the taper and race weeks)');
-      return { type: 'VOLT', category: 'strength', title: 'Volt', indoor: true, summary: `Volt, ${light[1]}`, notes: deloadNote, phases: [] };
+      return { type: 'VOLT', category: 'strength', title: 'Volt', indoor: true, summary: `Volt, ${light[1]}`, notes: [], phases: [] };
     }
     const detail = cell.match(/^Volt \((.*)\)$/)?.[1];
     return {
       type: 'VOLT', category: 'strength', title: 'Volt', indoor: true,
       summary: detail ? `Volt, ${detail}` : 'Volt total-body session (track and field distance plan)',
-      notes: [...deloadNote, 'Add 2 to 3 core stability exercises at the end. No explosive work the day before the long ride.'],
+      // Volt details live in the Volt app.
+      notes: [],
       phases: [],
     };
   }
