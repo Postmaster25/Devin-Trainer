@@ -226,8 +226,12 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
           {label && <div className="interval">{label}</div>}
           {upcomingRep && <div className="interval muted">{upcomingRep}</div>}
           <div className="watts-big">{watts || '—'}</div>
+          {phase.hr && (
+            <div className="hr-big">
+              <span className="hr-unit">♥ HR</span> {phase.hr}
+            </div>
+          )}
           <div className="phase-targets center">
-            {phase.hr && <span>HR {phase.hr}</span>}
             {phase.rpe && <span>RPE {phase.rpe}</span>}
             {phase.cadence && <span>{phase.cadence} rpm</span>}
           </div>
