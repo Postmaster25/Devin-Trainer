@@ -63,9 +63,11 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
 
   const importPlan = useCallback(async (p: Plan) => {
     await saveImportedPlan(p);
+    const fresh: Progress = { missed: {}, repeats: {} };
+    saveProgress(p.name, fresh);
     setPlan(p);
     setPlanSource('imported');
-    setProgress(loadProgress(p.name));
+    setProgress(fresh);
   }, []);
 
   const restoreDefaultPlan = useCallback(async () => {
