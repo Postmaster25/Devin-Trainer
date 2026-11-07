@@ -223,7 +223,16 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
           <div className="phase-group-label">{groupLabel(phase.group)}</div>
           <div className="phase-name-big">{phase.name}</div>
           {label && <div className="interval">{label}</div>}
-          <div className="watts-big">{watts || '—'}</div>
+          <div className="watts-big">
+            {watts ? (
+              <>
+                {watts.replace(/ W$/, '')}
+                <span className="watts-unit"> W</span>
+              </>
+            ) : (
+              '—'
+            )}
+          </div>
           {phase.hr && (
             <div className="hr-big">
               <span className="hr-unit">♥ HR</span> {phase.hr}
@@ -239,8 +248,14 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
           </button>
           {next ? (
             <div className="next">
-              <span className="muted">Next</span> {stepName(next)} · {fmtDuration(next.durationSec)}
-              {next.power && <strong> · {fmtPower(next.power, settings.ftp)}</strong>}
+              <span className="muted">Next</span> <span className="seg">{stepName(next)}</span> ·{' '}
+              <span className="seg">{fmtDuration(next.durationSec)}</span>
+              {next.power && (
+                <>
+                  {' '}
+                  · <strong className="seg">{fmtPower(next.power, settings.ftp)}</strong>
+                </>
+              )}
             </div>
           ) : (
             <div className="next muted">Last phase</div>
