@@ -239,8 +239,14 @@ export default function TimerView({ workoutKey }: { workoutKey: string }) {
           </button>
           {next ? (
             <div className="next">
-              <span className="muted">Next</span> {stepName(next)} · {fmtDuration(next.durationSec)}
-              {next.power && <strong> · {fmtPower(next.power, settings.ftp)}</strong>}
+              <span className="muted">Next</span> <span className="seg">{stepName(next)}</span> ·{' '}
+              <span className="seg">{fmtDuration(next.durationSec)}</span>
+              {next.power && (
+                <>
+                  {' '}
+                  · <strong className="seg">{fmtPower(next.power, settings.ftp)}</strong>
+                </>
+              )}
             </div>
           ) : (
             <div className="next muted">Last phase</div>

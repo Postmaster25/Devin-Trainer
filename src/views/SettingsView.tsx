@@ -15,6 +15,7 @@ export default function SettingsView() {
   const [importMsg, setImportMsg] = useState<{ ok: boolean; text: string; errors?: string[] }>();
   const [manifest, setManifest] = useState<AudioManifest>();
   const fileRef = useRef<HTMLInputElement>(null);
+  const [pasteText, setPasteText] = useState('');
   const lastWeek = Math.max(...plan.weeks.map((w) => w.number));
 
   useEffect(() => {
@@ -41,12 +42,12 @@ export default function SettingsView() {
     }
   };
 
-  const onFile = async (file: File) => {
+  const importText = async (text: string) => {
     let data: unknown;
     try {
-      data = JSON.parse(await file.text());
-    } catch {
-      setImportMsg({ ok: false, text: 'That file is not valid JSON.' });
+      data = JSON.parse(text);
+    } catch (e) {
+      setImportMsg({ ok: false, text: `That is not valid JSON: ${(e as Error).message}` });
       return;
     }
     const result = validatePlan(data);
@@ -56,6 +57,7 @@ export default function SettingsView() {
     }
     await importPlan(result.plan);
     setImportMsg({ ok: true, text: `Imported "${result.plan.name}" (${result.plan.weeks.length} weeks).` });
+    setPasteText('');
   };
 
   const exportPlan = () => {
@@ -145,13 +147,14 @@ export default function SettingsView() {
             hidden
             onChange={(e) => {
               const f = e.target.files?.[0];
-              if (f) void onFile(f);
+              if (f)
+                void f.text().then(importText, () => setImportMsg({ ok: false, text: 'Could not read that file.' }));
               e.target.value = '';
             }}
           />
           <div className="row wrap">
             <button className="btn" onClick={() => fileRef.current?.click()}>
-              Import plan
+              Import from file
             </button>
             <button className="btn" onClick={exportPlan}>
               Export plan JSON
@@ -169,6 +172,20 @@ export default function SettingsView() {
                 Restore default plan
               </button>
             )}
+          </div>
+          <div className="paste">
+            <textarea
+              aria-label="Plan JSON"
+              placeholder='Or paste plan JSON here: {"name": "...", "weeks": [...]}'
+              value={pasteText}
+              onChange={(e) => setPasteText(e.target.value)}
+              spellCheck={false}
+              autoCapitalize="off"
+              autoCorrect="off"
+            />
+            <button className="btn btn-primary" disabled={!pasteText.trim()} onClick={() => void importText(pasteText)}>
+              Validate and import
+            </button>
           </div>
           {importMsg && (
             <div className={`callout ${importMsg.ok ? '' : 'error'}`}>

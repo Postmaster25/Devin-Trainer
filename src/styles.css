@@ -123,13 +123,16 @@ button, input, select { font: inherit; color: inherit; }
 .phase-group-label { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 .phase-name-big { font-size: 2rem; font-weight: 800; }
 .interval { font-size: 1.15rem; font-weight: 700; }
-.watts-big { font-size: clamp(3rem, 16vw, 5.5rem); font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.05; }
+.watts-big { white-space: nowrap; font-size: clamp(2.2rem, 12.5vw, 4.5rem); font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.05; }
 .kind-recovery .watts-big, .kind-cooldown .watts-big, .kind-steady .watts-big, .kind-warmup .watts-big { color: var(--text); }
 .countdown { margin-top: 10px; background: var(--panel); border: none; border-radius: 20px; padding: 10px 24px; width: 100%; display: flex; flex-direction: column; align-items: center; cursor: pointer; }
 .countdown-label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
 .countdown-value { font-size: clamp(4rem, 24vw, 8rem); font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.05; }
 .timer.kind-work .countdown { background: rgba(255, 122, 26, 0.15); }
-.next { font-size: 1rem; margin-top: 8px; }
+.next .seg { white-space: nowrap; }
+.next { font-size: 1.25rem; margin-top: 10px; line-height: 1.35; }
+.paste { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.paste textarea { min-height: 160px; width: 100%; box-sizing: border-box; border-radius: 10px; border: 1px solid var(--panel-2); background: var(--bg); color: inherit; padding: 10px; font: 0.85rem ui-monospace, Menlo, monospace; }
 .controls { display: flex; gap: 10px; padding: 0 16px; }
 .controls .btn-block { margin: 0; }
 .timer.paused .countdown-value { opacity: 0.5; }

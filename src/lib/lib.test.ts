@@ -199,3 +199,17 @@ describe('groupLabel', () => {
     expect(groupLabel('Tempo (high cadence)')).toBe('Tempo (high cadence)');
   });
 });
+
+describe('validatePlan consistency', () => {
+  it('rejects duplicate weeks and day offsets', () => {
+    const p = structuredClone(plan) as { weeks: { number: number; days: { offset: number }[] }[] };
+    p.weeks[1].number = p.weeks[0].number;
+    p.weeks[2].days[1].offset = p.weeks[2].days[0].offset;
+    const r = validatePlan(p);
+    expect(r.ok).toBe(false);
+    if (!r.ok) {
+      expect(r.errors.some((e) => e.startsWith('weeks.1.number: Duplicate'))).toBe(true);
+      expect(r.errors.some((e) => e.startsWith('weeks.2.days.1.offset'))).toBe(true);
+    }
+  });
+});
