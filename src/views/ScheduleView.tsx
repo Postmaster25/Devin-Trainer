@@ -4,6 +4,9 @@ import { fmtMonthDay, fmtWeekday, planDate, todayISO, weekContaining } from '../
 import { fmtPower, primaryWorkPhase } from '../lib/watts';
 import { rawWorkout, resolveWorkout, workoutKey } from '../lib/planUtils';
 import { TopBar, isShortNote } from './common';
+import type { Workout } from '../data/schema';
+
+const CATEGORY_EMOJI: Record<Workout['category'], string> = { ride: '🚴', strength: '🏋️', run: '🏃', rest: '😴' };
 
 export default function ScheduleView({ weekNumber }: { weekNumber: number }) {
   const { plan, settings, progress, planSource } = useAppState();
@@ -19,7 +22,7 @@ export default function ScheduleView({ weekNumber }: { weekNumber: number }) {
   return (
     <div className="page">
       <TopBar
-        title={planSource === 'imported' ? plan.name : 'Sub-30 Plan'}
+        title={planSource === 'imported' ? plan.name : 'Ride Training Plan'}
         right={
           <a className="icon-btn" href={href({ name: 'settings' })} aria-label="Settings">
             ⚙
@@ -92,7 +95,12 @@ export default function ScheduleView({ weekNumber }: { weekNumber: number }) {
                     const content = (
                       <>
                         <div className="wo-head">
-                          <span className={`wo-title cat-${w.category}`}>{w.title}</span>
+                          <span className={`wo-title cat-${w.category}`}>
+                            <span className="wo-emoji" aria-hidden>
+                              {CATEGORY_EMOJI[w.category]}
+                            </span>
+                            {w.title}
+                          </span>
                           {w.category === 'ride' && <span className={`chip ${w.indoor ? 'chip-indoor' : 'chip-outdoor'}`}>{w.indoor ? 'Indoor' : 'Outdoor'}</span>}
                           {progress.missed[key] && <span className="chip chip-missed">Missed target</span>}
                         </div>
